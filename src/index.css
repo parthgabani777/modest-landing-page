@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-header {
+        @apply rounded-sm border-2 border-solid border-header px-2 py-1 uppercase hover:border-[#5b6168];
+    }
+    .btn-landing {
+        @apply rounded-[3px] border-2 border-solid border-white py-2 px-3 uppercase hover:border-primary hover:bg-primary;
+    }
+    .about-counter {
+        @apply h-fit bg-primary p-3 text-xl font-bold text-white;
+    }
+    .about-social-media-btn {
+        @apply flex h-full w-[60px] items-center justify-center bg-[#c8cdd0] hover:bg-[#d0d5d9];
+    }
+    .team-img-overlay {
+        @apply absolute left-1/2 top-1/2 hidden h-[50px] -translate-x-1/2 -translate-y-1/2 text-2xl text-white group-hover:flex;
+    }
+    .team-social-media-btn {
+        @apply flex h-full w-[50px] items-center justify-center bg-[#3a454d] hover:cursor-pointer hover:bg-[#4e5a62];
+    }
+    .form-labal {
+        @apply pl-2 text-sm font-bold uppercase text-[#8d8f92];
+    }
+    .work-img-overlay-text {
+        @apply absolute bottom-0 hidden w-full bg-[#292f36] py-5 pl-5 text-lg font-bold uppercase text-white group-hover:block;
+    }
+    .work-img-overlay-icon {
+        @apply absolute top-[100px] left-1/2 hidden translate-x-[-50%] translate-y-[-50%] text-5xl font-bold uppercase leading-none text-white group-hover:block;
+    }
+}
+
+.landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./assets/landing.png");
+}
